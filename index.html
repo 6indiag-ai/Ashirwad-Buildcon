@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashirwad Buildcon — Website & App Services</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b5cff"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Ashirwad Buildcon logo" class="logo"/>
+        <div>
+          <h1>Ashirwad Buildcon</h1>
+          <p class="tag">We build websites • apps • AI content tools</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <button id="downloadAppBtn" class="btn primary">Download App</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Digital Solutions for Creators & Businesses</h2>
+          <p>Website • Mobile App • AI Tools • Content Creation. Professional, fast and mobile-friendly.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Get a Quote</a>
+            <a class="btn ghost" id="tryAITools" href="#ai">Try AI Tools (Demo)</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-placeholder.png" alt="hero"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h3>Our Services</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="assets/service-web.png" alt="web"/>
+          <h4>Website Development</h4>
+          <p>Responsive websites, e-commerce, AI-powered landing pages.</p>
+        </div>
+        <div class="card">
+          <img src="assets/service-app.png" alt="app"/>
+          <h4>Mobile Apps</h4>
+          <p>Android / iOS / Hybrid apps with dashboards and PWA support.</p>
+        </div>
+        <div class="card">
+          <img src="assets/service-ai.png" alt="ai"/>
+          <h4>AI Tools</h4>
+          <p>Script writer, thumbnail maker, AI video generator (UI demo included).</p>
+        </div>
+        <div class="card">
+          <img src="assets/service-content.png" alt="content"/>
+          <h4>Content Services</h4>
+          <p>Video editing, thumbnails, scripts, monthly creator packages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <h3>Portfolio (Sample)</h3>
+      <div class="grid">
+        <div class="portfolio-item"><img src="assets/portfolio1.png" alt="p1"/><p>Brand Promo</p></div>
+        <div class="portfolio-item"><img src="assets/portfolio2.png" alt="p2"/><p>YouTube Channel</p></div>
+        <div class="portfolio-item"><img src="assets/portfolio3.png" alt="p3"/><p>App UI</p></div>
+        <div class="portfolio-item"><img src="assets/portfolio4.png" alt="p4"/><p>AI Demo</p></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section container">
+      <h3>Pricing (Sample Packages)</h3>
+      <div class="pricing-cards">
+        <div class="price-card">
+          <h4>Starter Website</h4>
+          <p class="price">₹12,999</p>
+          <ul><li>5 pages</li><li>Responsive</li><li>Basic SEO</li></ul>
+          <a class="btn primary" href="#contact">Order</a>
+        </div>
+        <div class="price-card">
+          <h4>App + Dashboard</h4>
+          <p class="price">₹79,999</p>
+          <ul><li>Android / iOS (Hybrid)</li><li>Admin panel</li><li>Support 3 months</li></ul>
+          <a class="btn primary" href="#contact">Order</a>
+        </div>
+        <div class="price-card">
+          <h4>Creator Pack (Monthly)</h4>
+          <p class="price">₹7,999 / month</p>
+          <ul><li>20 Reels</li><li>Thumbnails</li><li>Posting</li></ul>
+          <a class="btn primary" href="#contact">Subscribe</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section container">
+      <h3>AI Tools (Demo UI)</h3>
+      <div class="ai-tools">
+        <div class="ai-card">
+          <h4>AI Script Writer</h4>
+          <textarea id="scriptInput" placeholder="Enter topic..."></textarea>
+          <button id="generateScript" class="btn">Generate (Demo)</button>
+          <pre id="scriptOutput" class="output" aria-live="polite"></pre>
+        </div>
+        <div class="ai-card">
+          <h4>AI Thumbnail Maker</h4>
+          <p>Upload image (demo) or choose template.</p>
+          <button class="btn">Open Demo</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <h3>Contact Us</h3>
+      <p><strong>Company:</strong> Ashirwad Buildcon</p>
+      <p><strong>Owner:</strong> Nitish</p>
+      <p><strong>Team:</strong> Nishant, Aditya</p>
+      <p><strong>Phone / WhatsApp:</strong> <a href="tel:7004344611">7004344611</a></p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Aapka naam" required />
+        <input type="email" name="email" placeholder="Email (optional)" />
+        <textarea name="message" placeholder="Aapka message" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+      <p class="small">Note: This is a frontend demo. Forms are not connected to backend.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Ashirwad Buildcon — Built for promotion. Phone: <a href="tel:7004344611">7004344611</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
