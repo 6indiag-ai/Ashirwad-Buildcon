@@ -44,4 +44,4 @@ textarea{width:100%;min-height:80px;padding:0.5rem;border-radius:8px;border:1px 
 .btn.ghost{background:transparent;border:1px solid rgba(11,92,255,0.12)}
 .small{color:var(--muted);font-size:0.9rem}
 .contact-section p{margin:0.25rem 0}
-@media(max-width:800px){.hero-inner{flex-direction:column}.nav{display:flex;gap:0.5rem;flex-wrap:wrap}}
+@media(max-width:600px){.hero-inner{flex-direction:column}.nav{display:flex;gap:0.5rem;flex-wrap:wrap}}
